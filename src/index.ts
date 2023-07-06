@@ -9,14 +9,12 @@ class ApiService {
 		const query = new URLSearchParams(params).toString();
 		const requestUrl = query ? `${this.url}&${query}` : this.url;
   
-		const response = await fetch(requestUrl);
-		return await response.json();
+		const response = fetch(requestUrl).then((response) => response.json());
+		return response;
 	}
 }
 
-export async function getAllFestivals() {
+export function getAllFestivals() {
 	const apiService = new ApiService();
-	apiService.getFestivals().then((festivals: any) => {
-		return festivals;
-	});
+	return apiService.getFestivals();
 }
