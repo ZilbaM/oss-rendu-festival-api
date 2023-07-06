@@ -1,8 +1,8 @@
-import ApiService from './service';
+const ApiService = require('./service');
 
 async function getAllFestivals() {
 	const apiService = new ApiService();
-	apiService.getFestivals().then((festivals) => {
+	apiService.getFestivals().then((festivals: any) => {
 		return festivals;
 	});
 }
