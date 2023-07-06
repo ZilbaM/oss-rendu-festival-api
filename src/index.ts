@@ -1,6 +1,6 @@
 import ApiService from './service';
 
-export default function getAllFestivals() {
+export default async function getAllFestivals() {
 	const apiService = new ApiService();
 	apiService.getFestivals().then((festivals) => {
 		return festivals;
