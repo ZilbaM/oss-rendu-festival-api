@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "test": "npx jest tests",
-    "eslint": "eslint src",
+    "eslint": "eslint src --fix",
     "build": "tsc"
   },
   "repository": {
