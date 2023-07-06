@@ -2,15 +2,17 @@
   "name": "oss-rendu-festival-api",
   "version": "1.0.2",
   "description": "",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "npx jest tests",
-    "eslint": "eslint src"
+    "eslint": "eslint src",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ZilbaM/oss-rendu-festival-api.git"
   },
+  "files": ["lib/**/*"],
   "author": "Basile Maille",
   "license": "MIT",
   "bugs": {
