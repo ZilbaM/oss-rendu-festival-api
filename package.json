@@ -1,6 +1,6 @@
 {
   "name": "oss-rendu-festival-api",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/ZilbaM/oss-rendu-festival-api.git"
   },
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "author": "Basile Maille",
   "license": "MIT",
   "bugs": {
